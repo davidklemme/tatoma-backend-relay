@@ -2,7 +2,8 @@
   "name": "tatomarelay",
   "version": "1.0.0",
   "description": "relay server for tatoma app",
-  "main": "index.js",
+  "main": "App.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/davidklemme/tatoma-backend-relay/issues"
   },
-  "homepage": "https://github.com/davidklemme/tatoma-backend-relay#readme"
+  "homepage": "https://github.com/davidklemme/tatoma-backend-relay#readme",
+  "dependencies": {
+    "pg": "^8.7.1"
+  }
 }
