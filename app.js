@@ -9,7 +9,7 @@ dotenv.config();
 
 const {Pool} = pkg;
 
-const hostname = 'localhost';
+const hostname = '127.0.0.1';
 const config = process.env;
 
 let port = process.env.PORT;
@@ -98,6 +98,6 @@ const requestListener = function (req, res) {
 const server = createServer(requestListener);
 
 server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+  console.log(`API token Server running at http://${hostname}:${port}/`);
 });
 
