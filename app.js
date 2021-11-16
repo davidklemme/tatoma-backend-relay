@@ -19,10 +19,9 @@ if (port == null || port == "") {
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
-  ssl: false
-  // {
-  //   rejectUnauthorized: false
-  // }
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 const getDBResults = async () => {
