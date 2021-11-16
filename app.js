@@ -9,7 +9,7 @@ dotenv.config();
 
 const {Pool} = pkg;
 
-const hostname = '127.0.0.1';
+const hostname = '0.0.0.0';
 const config = process.env;
 
 let port = process.env.PORT;
