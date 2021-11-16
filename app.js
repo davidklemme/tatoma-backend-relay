@@ -56,8 +56,8 @@ const dbResults =  await getDBResults();
 // console.log('New token: \n', randToken);
 
 const requestListener = function (req, res) {
-    const header = req.headers.authorization || '';       // get the auth header
-    const token = header.split(' ')[1] || '';        // and the encoded auth token
+    const header = req.headers.authorization || '';
+    const token = header.split(' ')[1] || '';  
     const decodedJwt = decodeJwt(token);
     if(!decodedJwt){
       res.writeHead(403);
