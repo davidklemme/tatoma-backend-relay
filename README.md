@@ -1,7 +1,7 @@
 # tatoma-backend-relay
 
 ---
-! unlicense !
+! unlicensed !
 ---
 exchanging API keys with tatoma App running on Android or iOS
 
